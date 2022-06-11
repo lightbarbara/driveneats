@@ -41,16 +41,16 @@ body {
 
 .conteudo {
     margin-top: 92px;
-    padding-top: 50px;
+    padding-top: 20px;
     background-color: #eeeeee;
-    height: 400px;
+    height: 970px;
 }
 
 .titulo {
     font-family: 'Righteous', cursive;
     font-size: 26px;
-    margin-left: 20px;
-    color: #333333
+    color: #333333;
+    margin-top: 10px
 }
 
 .finalizacao {
@@ -66,4 +66,60 @@ body {
     height: 100%;
     background-color: white;
     margin: 0 auto;
+}
+
+.prato, .bebida, .sobremesa {
+    margin-left: 20px
+}
+
+.opcoes {
+    display: flex;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.opcao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 15px 0;
+    margin-right: 20px;
+    width: 400px;
+    height: 216px;
+    background-color: white;
+    padding: 5px 15px;
+    border-radius: 9px;
+    box-shadow: 0 0 1em rgba(27, 27, 27, .15);
+}
+
+.opcao img {
+    width:144px;
+    height:87px;
+    border-radius: 4px;
+    object-fit: cover;
+    margin: 5px 2px;
+    margin-top: 15px
+}
+
+.nome {
+    font-weight: 700;
+    color: #333333;
+    margin: 0 2px
+}
+
+.descricao {
+    font-size: 14.7px;
+    font-weight: 300;
+    margin: 10px 2px;
+    color: #a6a6a6
+}
+
+.preco {
+    font-weight: 400;
+    margin: 0 2px;
+    margin-top: 10px;
+    color: black
 }
