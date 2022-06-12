@@ -206,3 +206,57 @@ function finalizar() {
         elemento12.classList.add('pos-selecao')
     }
 }
+
+function enviar_mensagem() {
+    let preco = 0
+    let comida
+    let elemento1 = document.querySelector('.opcao1');
+    let elemento2 = document.querySelector('.opcao2');
+    let elemento3 = document.querySelector('.opcao3');
+    if (elemento1.classList.contains('destaque')) {
+        comida = 'Strogonoff'
+        preco += 28
+    } else if (elemento2.classList.contains('destaque')) {
+        comida = 'Japonês'
+        preco += 50
+    } else if (elemento3.classList.contains('destaque')) {
+        comida = 'Churrasco'
+        preco += 47
+    }
+
+    let bebida
+    let elemento4 = document.querySelector('.opcao4');
+    let elemento5 = document.querySelector('.opcao5');
+    let elemento6 = document.querySelector('.opcao6');
+    if (elemento4.classList.contains('destaque')) {
+        bebida = 'Coca-cola'
+        preco += 7
+    } else if (elemento5.classList.contains('destaque')) {
+        bebida = 'Heineken'
+        preco += 12
+    } else if (elemento6.classList.contains('destaque')) {
+        bebida = 'Suco'
+        preco += 20
+    }
+
+    let sobremesa
+    let elemento7 = document.querySelector('.opcao7');
+    let elemento8 = document.querySelector('.opcao8');
+    let elemento9 = document.querySelector('.opcao9');
+    if (elemento7.classList.contains('destaque')) {
+        sobremesa = 'Torta-alemã'
+        preco += 35
+    } else if (elemento8.classList.contains('destaque')) {
+        sobremesa = 'Quindim'
+        preco += 17
+    } else if (elemento9.classList.contains('destaque')) {
+        sobremesa = 'Palha-italiana'
+        preco += 13
+    }
+
+    preco = preco.toFixed(2)
+
+    mensagem = `Ol%C3%A1%2C%20gostaria%20de%20fazer%20o%20pedido%3A%0A-%20Prato%3A%20${comida}%0A-%20Bebida%3A%20${bebida}%0A-%20Sobremesa%3A%20${sobremesa}%0ATotal%3A%20${preco}`
+
+    window.open(`https://wa.me/5521988965187/?text=${mensagem}`)
+}
