@@ -12,6 +12,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1
 }
 
 .topo-caixa {
@@ -43,7 +44,7 @@ body {
     margin-top: 92px;
     padding-top: 20px;
     background-color: #eeeeee;
-    height: 958px;
+    height: 980px;
 }
 
 .titulo {
@@ -82,10 +83,11 @@ body {
     display: none;
 }
 
-.opcao {
+.opcao1, .opcao2, .opcao3, .opcao4, .opcao5, .opcao6, .opcao7, .opcao8, .opcao9 {
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 15px 0;
     margin-right: 20px;
     width: 400px;
@@ -96,7 +98,7 @@ body {
     box-shadow: 0 0 1em rgba(27, 27, 27, .15);
 }
 
-.opcao img {
+.opcoes img {
     width:144px;
     height:87px;
     border-radius: 4px;
@@ -137,4 +139,20 @@ body {
     font-size: 17px;
     font-weight: 400;
     color: white
+}
+
+.destaque {
+    border: 5px solid #32b72f;
+}
+
+ion-icon {
+    font-size: 17px;
+    color: #32b72f;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+}
+
+.desaparecer {
+    display: none
 }
