@@ -20,96 +20,96 @@
         <div class="prato">
             <div class="titulo">Primeiro, seu prato</div>
             <div class="opcoes">
-                <div class="opcao1 destaque" onclick="destaque1()">
+                <div class="opcao1" onclick="destaque1(); escolher_comida1(); finalizar()">
                     <img src="img/strogonoff.jpg">
                     <div class="descricao">
                         <p class="nome">Strogonoff</p>
                         <p class="descricao">Para lembrar da infância</p>
                         <p class="preco">R$ 28,00</p>
                     </div>
-                    <ion-icon name="checkmark-circle"></ion-icon>
+                    <ion-icon class="desaparecer" name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="opcao2 destaque check" onclick="destaque2()">
+                <div class="opcao2" onclick="destaque2(); escolher_comida2(); finalizar()">
                     <img src="img/japones.jpg">
                     <div class="descricao">
                         <p class="nome">Japonês</p>
                         <p class="descricao">O sushi direto do Japão</p>
                         <p class="preco">R$ 50,00</p>
                     </div>
-                    <ion-icon name="checkmark-circle"></ion-icon>
+                    <ion-icon class="desaparecer" name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="opcao3 destaque check" onclick="destaque3()">
+                <div class="opcao3" onclick="destaque3(); escolher_comida3(); finalizar()">
                     <img src="img/churrasco.webp">
                     <div class="descricao">
                         <p class="nome">Churrasco</p>
                         <p class="descricao">O tradicional churrasquinho brasileiro</p>
                         <p class="preco">R$ 47,00</p>
                     </div>
-                    <ion-icon name="checkmark-circle"></ion-icon>
+                    <ion-icon class="desaparecer" name="checkmark-circle"></ion-icon>
                 </div>
             </div>
         </div>
         <div class="bebida">
             <div class="titulo">Agora, sua bebida</div>
             <div class="opcoes">
-                <div class="opcao4 destaque check" onclick="destaque4()">
+                <div class="opcao4" onclick="destaque4(); escolher_bebida4(); finalizar()">
                     <img src="img/coca.jpg">
                     <div class="descricao">
                         <p class="nome">Coca-cola</p>
                         <p class="descricao">O refrigerante mais saboroso</p>
                         <p class="preco">R$ 7,00</p>
                     </div>
-                    <ion-icon name="checkmark-circle"></ion-icon>
+                    <ion-icon class="desaparecer" name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="opcao5 destaque check" onclick="destaque5()">
+                <div class="opcao5" onclick="destaque5(); escolher_bebida5(); finalizar()">
                     <img src="img/heineken.jpg">
                     <div class="descricao">
                         <p class="nome">Heineken</p>
                         <p class="descricao">Para relaxar após aquele dia cansativo</p>
                         <p class="preco">R$ 12,00</p>
                     </div>
-                    <ion-icon name="checkmark-circle"></ion-icon>
+                    <ion-icon class="desaparecer" name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="opcao6 destaque check" onclick="destaque6()">
+                <div class="opcao6" onclick="destaque6(); escolher_bebida6(); finalizar()">
                     <img src="img/suco.png">
                     <div class="descricao">
                         <p class="nome">Suco de laranja</p>
                         <p class="descricao">Uma opção saudável</p>
                         <p class="preco">R$ 20,00</p>
                     </div>
-                    <ion-icon name="checkmark-circle"></ion-icon>
+                    <ion-icon class="desaparecer" name="checkmark-circle"></ion-icon>
                 </div>
             </div>
         </div>
         <div class="sobremesa">
             <div class="titulo">Por fim, sua sobremesa</div>
             <div class="opcoes">
-                <div class="opcao7 destaque" onclick="destaque7()">
+                <div class="opcao7" onclick="destaque7(); escolher_sobremesa7(); finalizar()">
                     <img src="img/torta.jpeg">
                     <div class="descricao">
                         <p class="nome">Torta alemã</p>
                         <p class="descricao">Uma fatia da torta mais gostosa do Brasil</p>
                         <p class="preco">R$ 35,00</p>
                     </div>
-                    <ion-icon name="checkmark-circle"></ion-icon>
+                    <ion-icon class="desaparecer" name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="opcao8 destaque check" onclick="destaque8()">
+                <div class="opcao8" onclick="destaque8(); escolher_sobremesa8(); finalizar()">
                     <img src="img/quindim.webp">
                     <div class="descricao">
                         <p class="nome">Quindim</p>
                         <p class="descricao">Um docinho português para adocicar seu dia</p>
                         <p class="preco">R$ 17,00</p>
                     </div>
-                    <ion-icon name="checkmark-circle"></ion-icon>
+                    <ion-icon class="desaparecer" name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="opcao9 destaque check" onclick="destaque9()">
+                <div class="opcao9" onclick="destaque9(); escolher_sobremesa9(); finalizar()">
                     <img src="img/palha.png">
                     <div class="descricao">
                         <p class="nome">Palha italiana</p>
                         <p class="descricao">A palha italiana artesanal mais pedida</p>
                         <p class="preco">R$ 13,00</p>
                     </div>
-                    <ion-icon name="checkmark-circle"></ion-icon>
+                    <ion-icon class="desaparecer" name="checkmark-circle"></ion-icon>
                 </div>
             </div>
         </div>
@@ -118,6 +118,7 @@
         <div class="finalizacao-caixa">
             <div class="confirma">
                 <p>Selecione os 3 itens</br>para fechar o pedido</p>
+                <p class="texto-pos-selecao">Fechar pedido</p>
             </div>
         </div>
     </div>

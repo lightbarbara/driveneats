@@ -61,6 +61,148 @@ function destaque9() {
     icone.classList.toggle('desaparecer')
 }
 
-function contar() {
+function escolher_comida1() {
+    let elemento1 = document.querySelector('.opcao1');
+    let elemento2 = document.querySelector('.opcao2');
+    let icone2 = document.querySelector('.opcao2 ion-icon');
+    let elemento3 = document.querySelector('.opcao3');
+    let icone3 = document.querySelector('.opcao3 ion-icon');
+    if (elemento1.classList.contains('destaque')) {
+        elemento2.classList.remove('destaque');
+        icone2.classList.add('desaparecer');
+        elemento3.classList.remove('destaque');
+        icone3.classList.add('desaparecer');
+    }
+}
 
+function escolher_comida2() {
+    let elemento1 = document.querySelector('.opcao1');
+    let icone1 = document.querySelector('.opcao1 ion-icon');
+    let elemento2 = document.querySelector('.opcao2');
+    let elemento3 = document.querySelector('.opcao3');
+    let icone3 = document.querySelector('.opcao3 ion-icon');
+    if (elemento2.classList.contains('destaque')) {
+        elemento1.classList.remove('destaque');
+        icone1.classList.add('desaparecer');
+        elemento3.classList.remove('destaque');
+        icone3.classList.add('desaparecer');
+    }
+}
+
+function escolher_comida3() {
+    let elemento1 = document.querySelector('.opcao1');
+    let icone1 = document.querySelector('.opcao1 ion-icon');
+    let elemento2 = document.querySelector('.opcao2');
+    let icone2 = document.querySelector('.opcao2 ion-icon');
+    let elemento3 = document.querySelector('.opcao3');
+    if (elemento3.classList.contains('destaque')) {
+        elemento1.classList.remove('destaque');
+        icone1.classList.add('desaparecer');
+        elemento2.classList.remove('destaque');
+        icone2.classList.add('desaparecer')
+    }
+}
+
+function escolher_bebida4() {
+    let elemento4 = document.querySelector('.opcao4');
+    let elemento5 = document.querySelector('.opcao5');
+    let icone5 = document.querySelector('.opcao5 ion-icon');
+    let elemento6 = document.querySelector('.opcao6');
+    let icone6 = document.querySelector('.opcao6 ion-icon');
+    if (elemento4.classList.contains('destaque')) {
+        elemento5.classList.remove('destaque');
+        icone5.classList.add('desaparecer');
+        elemento6.classList.remove('destaque');
+        icone6.classList.add('desaparecer');
+    }
+}
+
+function escolher_bebida5() {
+    let elemento4 = document.querySelector('.opcao4');
+    let icone4 = document.querySelector('.opcao4 ion-icon');
+    let elemento5 = document.querySelector('.opcao5');
+    let elemento6 = document.querySelector('.opcao6');
+    let icone6 = document.querySelector('.opcao6 ion-icon');
+    if (elemento5.classList.contains('destaque')) {
+        elemento4.classList.remove('destaque');
+        icone4.classList.add('desaparecer');
+        elemento6.classList.remove('destaque');
+        icone6.classList.add('desaparecer');
+    }
+}
+
+function escolher_bebida6() {
+    let elemento4 = document.querySelector('.opcao4');
+    let icone4 = document.querySelector('.opcao4 ion-icon');
+    let elemento5 = document.querySelector('.opcao5');
+    let icone5 = document.querySelector('.opcao5 ion-icon');
+    let elemento6 = document.querySelector('.opcao6');
+    if (elemento6.classList.contains('destaque')) {
+        elemento4.classList.remove('destaque');
+        icone4.classList.add('desaparecer');
+        elemento5.classList.remove('destaque');
+        icone5.classList.add('desaparecer')
+    }
+}
+
+function escolher_sobremesa7() {
+    let elemento7 = document.querySelector('.opcao7');
+    let elemento8 = document.querySelector('.opcao8');
+    let icone8 = document.querySelector('.opcao8 ion-icon');
+    let elemento9 = document.querySelector('.opcao9');
+    let icone9 = document.querySelector('.opcao9 ion-icon');
+    if (elemento7.classList.contains('destaque')) {
+        elemento8.classList.remove('destaque');
+        icone8.classList.add('desaparecer');
+        elemento9.classList.remove('destaque');
+        icone9.classList.add('desaparecer');
+    }
+}
+
+function escolher_sobremesa8() {
+    let elemento7 = document.querySelector('.opcao7');
+    let icone7 = document.querySelector('.opcao7 ion-icon');
+    let elemento8 = document.querySelector('.opcao8');
+    let elemento9 = document.querySelector('.opcao9');
+    let icone9 = document.querySelector('.opcao9 ion-icon');
+    if (elemento8.classList.contains('destaque')) {
+        elemento7.classList.remove('destaque');
+        icone7.classList.add('desaparecer');
+        elemento9.classList.remove('destaque');
+        icone9.classList.add('desaparecer');
+    }
+}
+
+function escolher_sobremesa9() {
+    let elemento7 = document.querySelector('.opcao7');
+    let icone7 = document.querySelector('.opcao7 ion-icon');
+    let elemento8 = document.querySelector('.opcao8');
+    let icone8 = document.querySelector('.opcao8 ion-icon');
+    let elemento9 = document.querySelector('.opcao9');
+    if (elemento9.classList.contains('destaque')) {
+        elemento7.classList.remove('destaque');
+        icone7.classList.add('desaparecer');
+        elemento8.classList.remove('destaque');
+        icone8.classList.add('desaparecer')
+    }
+}
+
+function finalizar() {
+    let elemento1 = document.querySelector('.opcao1');
+    let elemento2 = document.querySelector('.opcao2');
+    let elemento3 = document.querySelector('.opcao3');
+    let elemento4 = document.querySelector('.opcao4');
+    let elemento5 = document.querySelector('.opcao5');
+    let elemento6 = document.querySelector('.opcao6');
+    let elemento7 = document.querySelector('.opcao7');
+    let elemento8 = document.querySelector('.opcao8');
+    let elemento9 = document.querySelector('.opcao9');
+    let elemento10 = document.querySelector('.confirma p:nth-child(1)');
+    let elemento11 = document.querySelector('.confirma p:nth-child(2)');
+    let elemento12 = document.querySelector('.confirma');
+    if ((elemento1.classList.contains('destaque') || elemento2.classList.contains('destaque') || elemento3.classList.contains('destaque')) && (elemento4.classList.contains('destaque') || elemento5.classList.contains('destaque') || elemento6.classList.contains('destaque')) && (elemento7.classList.contains('destaque') || elemento8.classList.contains('destaque') || elemento9.classList.contains('destaque'))) {
+        elemento10.classList.add('texto-pre-selecao');
+        elemento11.classList.remove('texto-pos-selecao');
+        elemento12.classList.add('pos-selecao')
+    }
 }
