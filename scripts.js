@@ -258,5 +258,7 @@ function enviar_mensagem() {
 
     mensagem = `Ol%C3%A1%2C%20gostaria%20de%20fazer%20o%20pedido%3A%0A-%20Prato%3A%20${comida}%0A-%20Bebida%3A%20${bebida}%0A-%20Sobremesa%3A%20${sobremesa}%0ATotal%3A%20${preco}`
 
-    window.open(`https://wa.me/5521988965187/?text=${mensagem}`)
+    if (comida && bebida && sobremesa && preco) {
+        window.open(`https://wa.me/5521988965187/?text=${mensagem}`)
+    }
 }
