@@ -91,7 +91,7 @@ body {
     margin: 15px 0;
     margin-right: 20px;
     width: 400px;
-    height: 216px;
+    height: 226px;
     background-color: white;
     padding: 5px 15px;
     border-radius: 9px;
@@ -136,7 +136,7 @@ body {
     height: 35px;
     justify-content: center;
     text-align: center;
-    align-items: center
+    align-items: center;
 }
 
 .pos-selecao {
@@ -152,6 +152,7 @@ body {
 .destaque {
     border: 5px solid #32b72f;
     box-shadow: 0 5px 5px rgba(27, 27, 27, .5);
+    box-sizing: border-box
 }
 
 ion-icon {
